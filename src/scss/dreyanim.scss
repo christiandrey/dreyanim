@@ -394,3 +394,75 @@
     opacity: 0
   }
 }
+
+.wipeInHorizontal {
+  @extend .dreyAnim;
+  -webkit-clip-path: inset(0 100% 0 0);
+  opacity: 0;
+  -webkit-animation-name: wipeInHorizontal;
+}
+
+@keyframes wipeInHorizontal {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+    opacity: 0
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+    opacity: 1
+  }
+}
+
+.wipeInVertical {
+  @extend .dreyAnim;
+  -webkit-clip-path: inset(0 0 100% 0);
+  opacity: 0;
+  -webkit-animation-name: wipeInVertical;
+}
+
+@keyframes wipeInVertical {
+  from {
+    -webkit-clip-path: inset(0 0 100% 0);
+    opacity: 0
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+    opacity: 1
+  }
+}
+
+.wipeOutHorizontal {
+  @extend .dreyAnim;
+  -webkit-clip-path: inset(0 0 0 0);
+  opacity: 1;
+  -webkit-animation-name: wipeOutHorizontal;
+}
+
+@keyframes wipeOutHorizontal {
+  from {
+    -webkit-clip-path: inset(0 0 0 0);
+    opacity: 1
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 100%);
+    opacity: 0
+  }
+}
+
+.wipeOutVertical {
+  @extend .dreyAnim;
+  -webkit-clip-path: inset(0 0 0 0);
+  opacity: 1;
+  -webkit-animation-name: wipeOutVertical;
+}
+
+@keyframes wipeOutVertical {
+  from {
+    -webkit-clip-path: inset(0 0 0 0);
+    opacity: 1
+  }
+  to {
+    -webkit-clip-path: inset(100% 0 0 0);
+    opacity: 0
+  }
+}

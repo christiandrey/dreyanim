@@ -124,6 +124,26 @@
           $animatable.addClass("dreyAnimRotateOut");
           setTimeout(function(){$animatable.addClass("hidden").removeClass("dreyAnimRotateOut")},settings.animationTime)
         },
+
+        wipeInHorizontal : function(){
+          $animatable.removeClass("hidden").addClass("wipeInHorizontal");
+          setTimeout(function(){$animatable.removeClass("wipeInHorizontal")},settings.animationTime)
+        },
+
+        wipeInVertical : function(){
+          $animatable.removeClass("hidden").addClass("wipeInVertical");
+          setTimeout(function(){$animatable.removeClass("wipeInVertical")},settings.animationTime)
+        },
+
+        wipeOutHorizontal : function(){
+          $animatable.addClass("wipeOutHorizontal");
+          setTimeout(function(){$animatable.addClass("hidden").removeClass("wipeOutHorizontal")},settings.animationTime)
+        },
+
+        wipeOutVertical : function(){
+          $animatable.addClass("wipeOutVertical");
+          setTimeout(function(){$animatable.addClass("hidden").removeClass("wipeOutVertical")},settings.animationTime)
+        }
       }
 
       dreyanimmethods[settings.animationType]();

@@ -2,7 +2,7 @@
   display: none !important;
 }
 
-.dreyAnim, .dreyAnimZoomIn, .dreyAnimZoomOut, .dreyAnimFadeIn, .dreyAnimFadeOut, .dreyAnimSlideInFromUp, .dreyAnimSlideInFromDown, .dreyAnimSlideInFromLeft, .dreyAnimSlideInFromRight, .dreyAnimSlideOutToUp, .dreyAnimSlideOutToDown, .dreyAnimSlideOutToLeft, .dreyAnimSlideOutToRight, .dreyAnimFlipIn, .dreyAnimFlipOut, .dreyAnimFlipInAlternate, .dreyAnimFlipOutAlternate, .dreyAnimFallIn, .dreyAnimFallOut, .dreyAnimFallInAlternate, .dreyAnimFallOutAlternate, .dreyAnimRotateIn, .dreyAnimRotateOut {
+.dreyAnim, .dreyAnimZoomIn, .dreyAnimZoomOut, .dreyAnimFadeIn, .dreyAnimFadeOut, .dreyAnimSlideInFromUp, .dreyAnimSlideInFromDown, .dreyAnimSlideInFromLeft, .dreyAnimSlideInFromRight, .dreyAnimSlideOutToUp, .dreyAnimSlideOutToDown, .dreyAnimSlideOutToLeft, .dreyAnimSlideOutToRight, .dreyAnimFlipIn, .dreyAnimFlipOut, .dreyAnimFlipInAlternate, .dreyAnimFlipOutAlternate, .dreyAnimFallIn, .dreyAnimFallOut, .dreyAnimFallInAlternate, .dreyAnimFallOutAlternate, .dreyAnimRotateIn, .dreyAnimRotateOut, .wipeInHorizontal, .wipeInVertical, .wipeOutHorizontal, .wipeOutVertical {
   -webkit-animation-fill-mode: both;
   -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -369,6 +369,74 @@
   }
   to {
     -webkit-transform: rotateZ(90deg) scale(1.5, 1.5) translateX(-50px);
+    opacity: 0;
+  }
+}
+
+.wipeInHorizontal {
+  -webkit-clip-path: inset(0 100% 0 0);
+  opacity: 0;
+  -webkit-animation-name: wipeInHorizontal;
+}
+
+@keyframes wipeInHorizontal {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+.wipeInVertical {
+  -webkit-clip-path: inset(0 0 100% 0);
+  opacity: 0;
+  -webkit-animation-name: wipeInVertical;
+}
+
+@keyframes wipeInVertical {
+  from {
+    -webkit-clip-path: inset(0 0 100% 0);
+    opacity: 0;
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+.wipeOutHorizontal {
+  -webkit-clip-path: inset(0 0 0 0);
+  opacity: 1;
+  -webkit-animation-name: wipeOutHorizontal;
+}
+
+@keyframes wipeOutHorizontal {
+  from {
+    -webkit-clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 100%);
+    opacity: 0;
+  }
+}
+
+.wipeOutVertical {
+  -webkit-clip-path: inset(0 0 0 0);
+  opacity: 1;
+  -webkit-animation-name: wipeOutVertical;
+}
+
+@keyframes wipeOutVertical {
+  from {
+    -webkit-clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+  to {
+    -webkit-clip-path: inset(100% 0 0 0);
     opacity: 0;
   }
 }
