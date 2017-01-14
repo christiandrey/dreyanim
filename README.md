@@ -73,6 +73,7 @@ This option defines the type of animation to be used. It should be provided as a
 |---------------|--------|---------|
 | **animationType** | *string* | `zoomIn`  |
 
+
 ###### animationTime
 This option defines the duration of the animation. It has a unit of milliseconds.
 
@@ -80,12 +81,14 @@ This option defines the duration of the animation. It has a unit of milliseconds
 |---------------|--------|---------|
 | **animationTime** | *float* | `600`  |
 
+
 ###### animationDelay
 Provide a value for this option if you want the animation to be delayed. It also has a unit of milliseconds.
 
 | Attribute     | Type   | Default |
 |---------------|--------|---------|
 | **animationDelay** | *float* | `0`  |
+
 
 ###### trueHide
 Make this option false if you do not want a class of `hidden` to be added to the element after **"out"** animations
@@ -101,4 +104,5 @@ Depends on jQuery.
 ## License
 
 Copyright 2017 [Christian Dréy](https://www.github.com/christiandrey).
+
 Licensed under the [MIT License](https://christiandrey.mit-license.org/)
