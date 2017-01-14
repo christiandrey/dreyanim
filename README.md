@@ -75,18 +75,21 @@ This option defines the type of animation to be used. It should be provided as a
 
 ###### animationTime
 This option defines the duration of the animation. It has a unit of milliseconds.
+
 | Attribute     | Type   | Default |
 |---------------|--------|---------|
 | **animationTime** | *float* | `600`  |
 
 ###### animationDelay
 Provide a value for this option if you want the animation to be delayed. It also has a unit of milliseconds.
+
 | Attribute     | Type   | Default |
 |---------------|--------|---------|
 | **animationDelay** | *float* | `0`  |
 
 ###### trueHide
 Make this option false if you do not want a class of `hidden` to be added to the element after **"out"** animations
+
 | Attribute     | Type   | Default |
 |---------------|--------|---------|
 | **trueHide** | *boolean* | `true`  |
