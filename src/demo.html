@@ -13,12 +13,12 @@
       <option value="fadeIn">fadeIn</option>
       <option value="fadeOut">fadeOut</option>
       <option value="slideInFromUp">slideInFromUp</option>
-      <option value="slideInFromDown">slideInFromDown</option>
-      <option value="slideInFromLeft">slideInFromLeft</option>
-      <option value="slideInFromRight">slideInFromRight</option>
       <option value="slideOutToUp">slideOutToUp</option>
+      <option value="slideInFromDown">slideInFromDown</option>
       <option value="slideOutToDown">slideOutToDown</option>
+      <option value="slideInFromLeft">slideInFromLeft</option>
       <option value="slideOutToLeft">slideOutToLeft</option>
+      <option value="slideInFromRight">slideInFromRight</option>
       <option value="slideOutToRight">slideOutToRight</option>
       <option value="flipIn">flipIn</option>
       <option value="flipOut">flipOut</option>
@@ -38,16 +38,7 @@
   </div>
 </body>
 <script src="js/jquery-3.1.0.slim.min.js"></script>
-<!-- <script src="dreyanimnojquery.js"></script> -->
 <script src="js/dreyanim.js"></script>
-<!-- <script src="dreymodal.js"></script> -->
-<!-- <script>
-  $('.testObject').dreyanim({
-    animationType : "flipInAlternate",
-    animationTime : 600
-  });
-</script> -->
-
 <script>
   $('#animationTrigger').on("change",function(){
     $animationType = $("#animationTrigger").val();
@@ -56,13 +47,5 @@
       animationTime : 600
     })
   })
-  // var elementPosition = $('.testObject').offset();
-  // alert(elementPosition.top);
 </script>
-<!-- <script>
-  var testObject = new DreyAnim({
-    animationType : "zoomIn",
-    targetObject : ".testObject"
-  });
-</script> -->
 </html>
