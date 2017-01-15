@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v7.2.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\Christian Drey\\Desktop\\Folders\\Jobs\\404\\Published\\dreyanim',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Christian Drey\AppData\Roaming\npm-cache\dreyanim\1.0.1\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Christian Drey\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle dreyanim@1.0.1~prepublish: dreyanim@1.0.1
+11 silly lifecycle dreyanim@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Christian Drey\\AppData\\Roaming\\npm-cache\\dreyanim\\1.0.1\\package.tgz',
+12 verbose tar pack   'C:\\Users\\Christian Drey\\Desktop\\Folders\\Jobs\\404\\Published\\dreyanim' ]
+13 verbose tarball C:\Users\Christian Drey\AppData\Roaming\npm-cache\dreyanim\1.0.1\package.tgz
+14 verbose folder C:\Users\Christian Drey\Desktop\Folders\Jobs\404\Published\dreyanim
+15 verbose addLocalTarball adding from inside cache C:\Users\Christian Drey\AppData\Roaming\npm-cache\dreyanim\1.0.1\package.tgz
+16 verbose correctMkdir C:\Users\Christian Drey\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd dreyanim@1.0.1
+18 verbose afterAdd C:\Users\Christian Drey\AppData\Roaming\npm-cache\dreyanim\1.0.1\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Christian Drey\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Christian Drey\AppData\Roaming\npm-cache\dreyanim\1.0.1\package\package.json written
+21 silly publish { name: 'dreyanim',
+21 silly publish   version: '1.0.1',
+21 silly publish   description: 'A jQuery plugin for CSS animations',
+21 silly publish   main: 'dist/js/dreyanim.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/christiandrey/dreyanim.git' },
+21 silly publish   keywords: [ 'jquery-plugin', 'ecosystem:jquery' ],
+21 silly publish   author: { name: 'Christian Dréy' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/christiandrey/dreyanim/issues' },
+21 silly publish   homepage: 'https://github.com/christiandrey/dreyanim#readme',
+21 silly publish   readme: '# dreyanim\r\n[dreyanim](https://github.com/christiandrey/dreyanim) is an animation library that makes it super easy to add **"in"** and **"out"** CSS animations to elements.\r\n\r\n## Browser support\r\n\r\ndreyanim works on all browsers that support CSS3.\r\n\r\n## Setup\r\n\r\nDownload the latest version [here](https://github.com/christiandrey/dreyanim/releases).\r\n\r\nInclude the core CSS library in your page header;\r\n\r\n``` html\r\n<link rel="stylesheet" href="css/dreyanim.css">\r\n```\r\n\r\nInclude jQuery and the [dreyanim](https://github.com/christiandrey/dreyanim/releases) plugin at the end of the document;\r\n\r\n``` js\r\n<script src="js/jquery-3.1.0.slim.min.js"></script>\r\n<script src="js/dreyanim.js"></script>\r\n```\r\n\r\n...and you\'re good to go!\r\n\r\n## Usage\r\n\r\nTo use the plugin, choose from a list of 26+ animations to use and apply it to your desired element and provide any of the [available options](#available-options);\r\n\r\n``` js\r\n$(\'.element\').dreyanim({\r\n  animationType : "zoomIn",\r\n  animationTime : 600,\r\n  trueHide : true\r\n})\r\n```\r\n\r\n## Available options\r\n\r\nThe following options are available to change in the [dreyanim](https://github.com/christiandrey/dreyanim/releases) plugin;\r\n\r\n###### animationType\r\nThis option defines the type of animation to be used. It should be provided as a string. You can choose from any of the following animations;\r\n> * `zoomIn`\r\n> * `zoomOut`\r\n> * `fadeIn`\r\n> * `fadeOut`\r\n> * `slideInFromUp`\r\n> * `slideInFromDown`\r\n> * `slideInFromLeft`\r\n> * `slideInFromRight`\r\n> * `slideOutToUp`\r\n> * `slideOutToDown`\r\n> * `slideOutToLeft`\r\n> * `slideOutToRight`\r\n> * `flipIn`\r\n> * `flipOut`\r\n> * `flipInAlternate`\r\n> * `flipOutAlternate`\r\n> * `fallIn`\r\n> * `fallOut`\r\n> * `fallInAlternate`\r\n> * `fallOutAlternate`\r\n> * `rotateIn`\r\n> * `rotateOut`\r\n> * `wipeInVertical`\r\n> * `wipeInHorizontal`\r\n> * `wipeOutVertical`\r\n> * `wipeOutHorizontal`\r\n\r\n| Attribute     | Type   | Default |\r\n|---------------|--------|---------|\r\n| **animationType** | *string* | `zoomIn`  |\r\n\r\n\r\n###### animationTime\r\nThis option defines the duration of the animation. It has a unit of milliseconds.\r\n\r\n| Attribute     | Type   | Default |\r\n|---------------|--------|---------|\r\n| **animationTime** | *float* | `600`  |\r\n\r\n\r\n###### animationDelay\r\nProvide a value for this option if you want the animation to be delayed. It also has a unit of milliseconds.\r\n\r\n| Attribute     | Type   | Default |\r\n|---------------|--------|---------|\r\n| **animationDelay** | *float* | `0`  |\r\n\r\n\r\n###### trueHide\r\nMake this option false if you do not want a class of `hidden` to be added to the element after **"out"** animations\r\n\r\n| Attribute     | Type   | Default |\r\n|---------------|--------|---------|\r\n| **trueHide** | *boolean* | `true`  |\r\n\r\n## Dependencies\r\n\r\nDepends on jQuery.\r\n\r\n## License\r\n\r\nCopyright 2017 [Christian Dréy](https://www.github.com/christiandrey).\r\n\r\nLicensed under the [MIT License](https://christiandrey.mit-license.org/)\r\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'f91e79b7b3fb65906e0b4fb9c786b48256393a9b',
+21 silly publish   _id: 'dreyanim@1.0.1',
+21 silly publish   _shasum: '16786793676afbc4391df26bb529edbc54d6bf55',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name dreyanim
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'dreyanim',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'dreyanim',
+26 silly mapToRegistry   name: 'dreyanim',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/dreyanim
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\Christian Drey\AppData\Roaming\npm-cache\dreyanim\1.0.1\package.tgz
+30 verbose request uri https://registry.npmjs.org/dreyanim
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:38:54 AM
+33 verbose request using bearer token for auth
+34 verbose request id 2dc7851b7a4cac05
+35 http request PUT https://registry.npmjs.org/dreyanim
+36 http 403 https://registry.npmjs.org/dreyanim
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sat, 14 Jan 2017 23:38:58 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1484437137.098291,VS0,VE1447',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\Christian Drey\AppData\Roaming\npm-cache\registry.npmjs.org\dreyanim on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : dreyanim
+40 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid dreyanim
+43 verbose cwd C:\Users\Christian Drey\Desktop\Folders\Jobs\404\Published\dreyanim
+44 error Windows_NT 10.0.14393
+45 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v7.2.1
+47 error npm  v3.10.10
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.1." : dreyanim
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

@@ -90,12 +90,6 @@ Provide a value for this option if you want the animation to be delayed. It also
 | **animationDelay** | *float* | `0`  |
 
 
-###### trueHide
-Make this option false if you do not want a class of `hidden` to be added to the element after **"out"** animations
-
-| Attribute     | Type   | Default |
-|---------------|--------|---------|
-| **trueHide** | *boolean* | `true`  |
 
 ## Dependencies
 

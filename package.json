@@ -1,0 +1,23 @@
+{
+  "name": "dreyanim",
+  "version": "1.0.1",
+  "description": "A jQuery plugin for CSS animations",
+  "main": "dist/js/dreyanim.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christiandrey/dreyanim.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "Christian Dréy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christiandrey/dreyanim/issues"
+  },
+  "homepage": "https://github.com/christiandrey/dreyanim#readme"
+}
