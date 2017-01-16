@@ -1,6 +1,6 @@
 {
   "name": "dreyanim",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A jQuery plugin for CSS animations",
   "main": "dist/js/dreyanim.js",
   "scripts": {
