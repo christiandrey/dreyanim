@@ -31,8 +31,7 @@ To use the plugin, choose from a list of 26+ animations to use and apply it to y
 ``` js
 $('.element').dreyanim({
   animationType : "zoomIn",
-  animationTime : 600,
-  trueHide : true
+  animationTime : 600
 })
 ```
 
