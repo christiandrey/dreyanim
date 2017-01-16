@@ -11,7 +11,6 @@
       $animatable.removeClass(allClasses);
       $animatable.css({
         "-webkit-animation-duration" : (settings.animationTime/1000) + "s",
-        "-webkit-animation-delay" : (settings.animationDelay/1000) + "s"
       })
 
       //Create random variable to prevent conflict
@@ -24,7 +23,7 @@
 
       var dreyanimmethods = {
         zoomIn : function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimZoomIn");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimZoomIn");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimZoomIn")},settings.animationTime + settings.animationDelay)
         },
 
@@ -34,7 +33,7 @@
         },
 
         fadeIn : function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimFadeIn");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimFadeIn");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimFadeIn")},settings.animationTime + settings.animationDelay)
         },
 
@@ -44,22 +43,22 @@
         },
 
         slideInFromUp : function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimSlideInFromUp");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimSlideInFromUp");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimSlideInFromUp")},settings.animationTime + settings.animationDelay)
         },
 
         slideInFromDown : function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimSlideInFromDown");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimSlideInFromDown");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimSlideInFromDown")},settings.animationTime + settings.animationDelay)
         },
 
         slideInFromLeft : function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimSlideInFromLeft");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimSlideInFromLeft");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimSlideInFromLeft")},settings.animationTime + settings.animationDelay)
         },
 
         slideInFromRight: function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimSlideInFromRight");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimSlideInFromRight");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimSlideInFromRight")},settings.animationTime + settings.animationDelay)
         },
 
@@ -84,7 +83,7 @@
         },
 
         flipIn : function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimFlipIn");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimFlipIn");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimFlipIn")},settings.animationTime + settings.animationDelay)
         },
 
@@ -94,7 +93,7 @@
         },
 
         flipInAlternate : function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimFlipInAlternate");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimFlipInAlternate");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimFlipInAlternate")},settings.animationTime + settings.animationDelay)
         },
 
@@ -109,12 +108,12 @@
         },
 
         fallOut : function(){
-          $animatable.addClass("dreyAnimFallOut");
+          setTimeout(function(){__("animatable").addClass("dreyAnimFallOut");},settings.animationDelay);
           setTimeout(function(){__("animatable").addClass("hidden").removeClass("dreyAnimFallOut")},settings.animationTime + settings.animationDelay);
         },
 
         fallInAlternate : function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimFallInAlternate");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimFallInAlternate");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimFallInAlternate")},settings.animationTime + settings.animationDelay)
         },
 
@@ -124,7 +123,7 @@
         },
 
         rotateIn : function(){
-          $animatable.removeClass("hidden").addClass("dreyAnimRotateIn");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("dreyAnimRotateIn");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("dreyAnimRotateIn")},settings.animationTime + settings.animationDelay)
         },
 
@@ -134,12 +133,12 @@
         },
 
         wipeInHorizontal : function(){
-          $animatable.removeClass("hidden").addClass("wipeInHorizontal");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("wipeInHorizontal");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("wipeInHorizontal")},settings.animationTime + settings.animationDelay)
         },
 
         wipeInVertical : function(){
-          $animatable.removeClass("hidden").addClass("wipeInVertical");
+          setTimeout(function(){__("animatable").removeClass("hidden").addClass("wipeInVertical");},settings.animationDelay);
           setTimeout(function(){__("animatable").removeClass("wipeInVertical")},settings.animationTime + settings.animationDelay)
         },
 
